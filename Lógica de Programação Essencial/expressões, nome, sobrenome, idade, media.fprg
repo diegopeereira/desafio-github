@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DIEGO PEREIRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-17 10:06:12 "/>
+        <attribute name="created" value="RElFR08gUEVSRUlSQTtERVNLVE9QLVZPTUZQQUY7MjAyMS0wMi0xNjsiMDM6MTA6MjIgIjszMTk5"/>
+        <attribute name="edited" value="RElFR08gUEVSRUlSQTtERVNLVE9QLVZPTUZQQUY7MjAyMS0wMi0xNzsiMTA6MDY6MTIgIjszOzMzMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite seu sobrenome: &quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Digite a sua idade: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Digite a quarta nota: &quot;" newline="True"/>
+            <input variable="nota4"/>
+            <output expression="&quot;O seu nome &#233;: &quot; &amp;nome" newline="True"/>
+            <output expression="&quot;O seu sobrenome: &quot; &amp;sobrenome" newline="True"/>
+            <output expression="&quot;A sua idade &#233;: &quot; &amp;idade" newline="True"/>
+            <output expression="&quot;A sua primeira nota &#233;: &quot; &amp;nota1" newline="True"/>
+            <output expression="&quot;A sua segunda nota &#233;: &quot; &amp;nota2" newline="True"/>
+            <output expression="&quot;A sua terceira nota &#233;: &quot; &amp;nota3" newline="True"/>
+            <output expression="&quot;A sua quarta nota &#233;: &quot; &amp;nota4" newline="True"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;A sua m&#233;dia &#233;: &quot; &amp;media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns voc&#234; foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelismente voc&#234; est&#225; reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

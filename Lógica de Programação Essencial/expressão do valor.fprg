@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DIEGO PEREIRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-17 10:06:25 "/>
+        <attribute name="created" value="RElFR08gUEVSRUlSQTtERVNLVE9QLVZPTUZQQUY7MjAyMS0wMi0xNjsiMDQ6Mzc6NTUgIjszMjE1"/>
+        <attribute name="edited" value="RElFR08gUEVSRUlSQTtERVNLVE9QLVZPTUZQQUY7MjAyMS0wMi0xNzsiMTA6MDY6MjUgIjs0OzMzMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, mar&#231;o, abril" type="String" array="False" size=""/>
+            <declare name="m&#234;s1, m&#234;s2, m&#234;s3, m&#234;s4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor da vendas do m&#234;s de janeiro&quot;" newline="True"/>
+            <input variable="m&#234;s1"/>
+            <output expression="&quot;Digite o valor da vendas do m&#234;s de fevereiro&quot;" newline="True"/>
+            <input variable="m&#234;s2"/>
+            <output expression="&quot;Digite o valor da vendas do m&#234;s de mar&#231;o&quot;" newline="True"/>
+            <input variable="m&#234;s3"/>
+            <output expression="&quot;Digite o valor da vendas do m&#234;s de abril&quot;" newline="True"/>
+            <input variable="m&#234;s4"/>
+            <assign variable="media" expression="(m&#234;s1+m&#234;s2+m&#234;s3+m&#234;s4)"/>
+            <output expression="&quot;O valor total das vendas nos 4 meses &#233;: &quot; &amp;media" newline="True"/>
+            <if expression="media&gt;=5.000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns voc&#234; receber&#225; um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelismente voc&#234; receber&#225; um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
